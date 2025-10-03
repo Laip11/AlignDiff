@@ -58,7 +58,7 @@ openrlhf.cli.train_dpo \\
    --load_checkpoint \\
    --gradient_checkpointing \\
    --seed 42 \\
-   --wandb_run_name {save_path.split('/')[-1]} \\
+   --wandb_run_name {save_path.split('/')[-1]} 
 EOF
 
 if [[ "${{1}}" != "slurm" ]]; then
