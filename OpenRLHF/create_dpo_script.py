@@ -21,7 +21,8 @@ def create_dpo_script(
 
     if sh_path is None:
         script_dir = 'OpenRLHF/training_scripts'
-
+        if not os.path.exists(script_dir):
+            os.makedirs(script_dir)
         dataset_filename_safe = dataset_name.replace("/", "_")
         sh_path = f'{script_dir}/train_{model_name}_{dataset_filename_safe}.sh'
     
