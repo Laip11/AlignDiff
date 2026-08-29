@@ -20,7 +20,4 @@ dependencies = [
 ]
 
 [tool.setuptools.packages.find]
-where = ["src"]
-
-[tool.setuptools.package-dir]
-"" = "src"
+include = ["aligndiff*"]

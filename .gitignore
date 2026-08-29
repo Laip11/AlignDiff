@@ -4,11 +4,9 @@ __pycache__/
 .venv/
 .env
 configs/local.env
-data/*.jsonl
-data/margins/
-data/filtered/
-saves/
-logs/
+/data/
+/saves/
+/logs/
 *.log
 .DS_Store
 .idea/

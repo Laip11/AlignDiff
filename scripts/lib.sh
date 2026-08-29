@@ -11,7 +11,7 @@ fi
 
 ALIGNDIFF_ROOT="${ALIGNDIFF_ROOT:-${ROOT}}"
 PYTHON="${PYTHON:-python3}"
-export PYTHONPATH="${ALIGNDIFF_ROOT}/OpenRLHF:${ALIGNDIFF_ROOT}/src${PYTHONPATH:+:${PYTHONPATH}}"
+export PYTHONPATH="${ALIGNDIFF_ROOT}/OpenRLHF:${ALIGNDIFF_ROOT}${PYTHONPATH:+:${PYTHONPATH}}"
 
 # Paper SFT checkpoints (UltraChat), not base / Instruct models.
 MODEL_QWEN="${MODEL_QWEN:-glorgao/Qwen2.5-7B-SFT}"
