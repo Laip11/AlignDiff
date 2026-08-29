@@ -3,7 +3,8 @@ bitsandbytes
 datasets
 deepspeed==0.17.6
 einops
-flash-attn==2.8.3
+# optional; AlignDiff scripts default to --attn_implementation sdpa
+# flash-attn==2.8.3
 grpcio>=1.74.0
 isort
 jsonlines

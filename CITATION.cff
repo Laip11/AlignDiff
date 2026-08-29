@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+title: "AlignDiff: Exploiting Model-Intrinsic Information for Better Preference Data Selection"
+message: If you use this software, please cite the EMNLP 2026 Findings paper.
+type: software
+authors:
+  - family-names: Lai
+    given-names: Peng
+  - family-names: Zhu
+    given-names: He
+  - family-names: Ruan
+    given-names: Zhiwen
+  - family-names: Zhang
+    given-names: Dongdong
+  - family-names: Chen
+    given-names: Yun
+  - family-names: Li
+    given-names: Peng
+  - family-names: Wei
+    given-names: Furu
+  - family-names: Liu
+    given-names: Yang
+  - family-names: Chen
+    given-names: Guanhua
+preferred-citation:
+  type: conference-paper
+  title: "AlignDiff: Exploiting Model-Intrinsic Information for Better Preference Data Selection"
+  authors:
+    - family-names: Lai
+      given-names: Peng
+    - family-names: Zhu
+      given-names: He
+    - family-names: Ruan
+      given-names: Zhiwen
+    - family-names: Zhang
+      given-names: Dongdong
+    - family-names: Chen
+      given-names: Yun
+    - family-names: Li
+      given-names: Peng
+    - family-names: Wei
+      given-names: Furu
+    - family-names: Liu
+      given-names: Yang
+    - family-names: Chen
+      given-names: Guanhua
+  collection-title: "Findings of the Association for Computational Linguistics: EMNLP 2026"
+  year: 2026

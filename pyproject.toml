@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aligndiff"
+version = "0.1.0"
+description = "AlignDiff: filter preference data with RAD + ANG, then train DPO"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=2.1",
+  "transformers>=4.40",
+  "datasets",
+  "pandas",
+  "numpy",
+  "tqdm",
+  "safetensors",
+  "huggingface_hub",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"

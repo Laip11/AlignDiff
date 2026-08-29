@@ -15,7 +15,7 @@ def _is_nightly():
 
 def _fetch_requirements(path):
     with open(path, "r") as fd:
-        return [r.strip() for r in fd.readlines()]
+        return [r.strip() for r in fd.readlines() if r.strip() and not r.strip().startswith("#")]
 
 
 def _fetch_readme():
