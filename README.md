@@ -4,7 +4,7 @@
 
 **Official implementation** of our EMNLP 2026 Findings paper.
 
-[Installation](#installation) • [Reproduction](#reproduction) • [Results](#results) • [Citation](#citation)
+[Installation](#installation) • [Reproduction](#reproduction) • [Citation](#citation)
 
 <img src="assets/aligndiff.png" alt="AlignDiff overview" width="100%"/>
 
@@ -115,19 +115,6 @@ python -m aligndiff.filter \
 
 Baseline selectors (`im`, `em`, `lcpp`, `pplgap`, `map`, `im_em`, `rip`) are available via `--methods` and are **not** required for AlignDiff. EM scoring uses Qwen2.5-72B-Instruct (Appendix H).
 
-## Results
-
-AlpacaEval 2.0 / Arena-Hard / MT-Bench from the paper (Table 1). AlignDiff uses 30k pairs vs. the full UltraFeedback set.
-
-| Method | LLaMA-3-8B-SFT LC | WR | Arena-Hard | MT-Bench | Qwen2.5-7B-SFT LC | WR | Arena-Hard | MT-Bench |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Full data | 13.7 | 16.8 | 36.2 | 6.5 | 21.3 | 18.9 | 46.9 | 6.8 |
-| IM | 19.1 | 19.8 | 38.9 | 7.1 | 27.8 | 27.0 | 57.0 | 7.3 |
-| SDPO | 20.1 | 21.3 | 45.3 | 6.9 | 30.2 | 28.8 | 55.3 | 7.2 |
-| **AlignDiff** | **26.4** | **29.3** | **47.0** | **7.2** | **33.4** | **33.8** | **58.7** | **7.3** |
-
-On AlpacaEval 2.0, AlignDiff improves length-controlled win rate over SDPO by **+6.3** (LLaMA) and **+3.2** (Qwen). Training LLaMA-3-8B-SFT on the AlignDiff subset nearly **doubles** LC vs. the full set (13.7 → 26.4).
-
 ## Repository Structure
 
 ```
@@ -161,7 +148,3 @@ If you find this repository or the paper useful, please cite:
   url={https://openreview.net/forum?id=4fclVIrUg2}
 }
 ```
-
-## Bugs or Questions?
-
-Please open a [GitHub issue](https://github.com/Laip11/AlignDiff/issues). If you have questions about the paper, contact the corresponding author listed in the manuscript.
